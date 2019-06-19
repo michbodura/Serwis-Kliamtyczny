@@ -1,0 +1,567 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Serwis klimatyczny</title>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/CAEBC282-28F9-C04A-B2A3-E7D5214D80F7/main.js" charset="UTF-8"></script><script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js" integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg==" crossorigin=""></script>
+	<script src="js/leaflet-geotiff.js"></script>
+	<script src="js/geotiff.js"></script>
+	<script src="js/plotty.js"></script>
+
+	<style>
+		html, body {
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			width: 100%;
+		}
+		#map {
+			width: 100%;
+			height: 100%;
+		}
+		.map-wrapper
+		{
+			position: relative;
+			height: 100%;
+			width: 100%
+		}
+		.layer-picker
+		{
+			position: absolute;
+			right: 120px;
+			top: 15px;
+			z-index: 20000;
+		}
+		.logo
+		{
+			position: absolute;
+			right: 750px;
+			top: 15px;
+			z-index: 2000;
+			height: 20%;
+			
+		}
+		.LinePrzez
+		{
+			position: absolute;
+			left: 30px;
+			top: 120px;
+			z-index: 2000;
+			height: 20%;
+			
+		}
+		.information
+		{
+			position: absolute;
+			right: 500px;
+			top: 15px;
+			z-index: 2000;
+			height: 20%;
+			
+		}
+		.information .img-top 
+		{
+			display: none;
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+		.information:hover .img-top 
+		{
+			display: inline;
+		}
+		
+		.measure
+		{
+			position: absolute;
+			right: 440px;
+			top: 15px;
+			z-index: 2000;
+			height: 20%;
+			
+		}
+		.measure .img-top 
+		{
+			display: none;
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+		.measure:hover .img-top 
+		{
+			display: inline;
+		}
+		.przezobr
+		{
+			position: absolute;
+			left: 15px;
+			top: 15px;
+			z-index: 2000;
+			height: 20%;
+		}
+		
+		.CreateMap
+		{
+			position: absolute;
+			left: 15px;
+			top: 160px;
+			z-index: 2000;
+			height: 20%;
+		}
+		.CreateMap .img-top 
+		{
+			display: none;
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+		.CreateMap:hover .img-top 
+		{
+			display: inline;
+		}
+		.AddCity
+		{
+			position: absolute;
+			left: 15px;
+			top: 280px;
+			z-index: 2000;
+			height: 20%;
+		}
+		.AddCity .img-top 
+		{
+			display: none;
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+		.AddCity:hover .img-top 
+		{
+			display: inline;
+		}
+		.SaveParams
+		{
+			position: absolute;
+			left: 15px;
+			top: 400px;
+			z-index: 2000;
+			height: 20%;
+		}
+		.SaveParams .img-top 
+		{
+			display: none;
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+		.SaveParams:hover .img-top 
+		{
+			display: inline;
+		}
+		.StartAnimation
+		{
+			position: absolute;
+			left: 15px;
+			top: 520px;
+			z-index: 2000;
+			height: 20%;
+		}
+		.StartAnimation .img-top 
+		{
+			display: none;
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+		.StartAnimation:hover .img-top 
+		{
+			display: inline;
+		}
+		.SetParams
+		{
+			position: absolute;
+			left: 15px;
+			top: 640px;
+			z-index: 2000;
+			height: 20%;
+		}
+		.SetParams .img-top 
+		{
+			display: none;
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+		.SetParams:hover .img-top 
+		{
+			display: inline;
+		}
+		.moving
+		{
+			position: absolute;
+			right: 380px;
+			top: 15px;
+			z-index: 2000;
+			height: 20%;
+			
+		}
+		.moving .img-top 
+		{
+			display: none;
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+		.moving:hover .img-top 
+		{
+			display: inline;
+		}
+		.zoomin
+		{
+			position: absolute;
+			right: 320px;
+			top: 15px;
+			z-index: 2000;
+			height: 20%;
+			cursor:pointer;
+			
+		}
+		.zoomin .img-top 
+		{
+			display: none;
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+		.zoomin:hover .img-top 
+		{
+			display: inline;
+		}
+		
+		.house
+		{
+			position: absolute;
+			right: 260px;
+			top: 15px;
+			z-index: 2000;
+			height: 20%;
+			
+		}
+		.house .img-top 
+		{
+			display: none;
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+		.house:hover .img-top 
+		{
+			display: inline;
+		}
+		.zoomout
+		{
+			position: absolute;
+			right: 200px;
+			top: 15px;
+			z-index: 2000;
+			height: 20%;
+			cursor:pointer;
+		}
+		.zoomout .img-top 
+		{
+			display: none;
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+		.zoomout:hover .img-top 
+		{
+			display: inline;
+		}
+		.Odtworz
+		{
+			position: absolute;
+			left: 180px;
+			top: 850px;
+			z-index: 2000;
+			height: 20%;
+			
+		}
+		.Odtworz .img-top 
+		{
+			display: none;
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+		.Odtworz:hover .img-top 
+		{
+			display: inline;
+		}
+		.Poprzedni
+		{
+			position: absolute;
+			left: 320px;
+			top: 850px;
+			z-index: 2000;
+			height: 20%;
+			
+		}
+		.Poprzedni .img-top 
+		{
+			display: none;
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+		.Poprzedni:hover .img-top 
+		{
+			display: inline;
+		}
+		.SlupCzasu
+		{
+			position: absolute;
+			left: 460px;
+			top: 900px;
+			z-index: 2000;
+			height: 20%;
+			
+		}
+		.Nastepny
+		{
+			position: absolute;
+			right: 60px;
+			top: 850px;
+			z-index: 2000;
+			height: 20%;
+			
+		}
+		.PrzedzialPierwszy
+		{
+			position: absolute;
+			left: 490px;
+			top: 880px;
+			z-index: 2000;
+			height: 20%;
+			
+		}
+		.PrzedzialDrugi
+		{
+			position: absolute;
+			left: 940px;
+			top: 880px;
+			z-index: 2000;
+			height: 20%;
+			
+		}
+		.PrzedzialTrzeci
+		{
+			position: absolute;
+			left: 1390px;
+			top: 880px;
+			z-index: 2000;
+			height: 20%;
+			
+		}
+		.Nastepny .img-top 
+		{
+			display: none;
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+		.Nastepny:hover .img-top 
+		{
+			display: inline;
+		}
+		
+		
+		
+		
+	</style>
+
+	
+</head>
+<body>
+<div class = "map-wrapper" left:80px; top:2px;>
+	
+	<div id='map'></div>
+		<div class = "logo">
+			<img src = "img/LogoSerwis.png" />
+		</div>
+		<div class = "information">
+			<img src = "img/Information.png" />
+			<img src= "img/InformationSel.png" class="img-top" alt="Selected">
+		</div>
+		<div class = "measure">
+			<img src = "img/Measure.png" />
+			<img src= "img/MeasureSel.png" class="img-top" alt="Selected">
+		</div>
+		<div class = "moving" id = "moving">
+			<img src = "img/Moving.png" alt="Not Selected"/>
+			<img src= "img/MovingSel.png" class="img-top" alt="Selected">
+		</div>
+		<div class = "zoomin" id = "zoomin">
+			<img src = "img/zoomin.png" alt="Not Selected"/>
+			<img src= "img/ZoomInSel.png" class="img-top" alt="Selected">
+			
+		</div>
+		<div class = "house" id = "house">
+			<img src = "img/House.png" alt="Not Selected"/>
+			<img src = "img/HouseSel.png" class="img-top alt="Not Selected"/>
+		</div>
+		<div class = "zoomout" id = "zoomout">
+			<img src = "img/zoomout.png" alt="Not Selected"/>
+			<img src= "img/ZoomoutSel.png" class="img-top" alt="Selected">
+			
+		</div>
+		<div class = "przezobr" id = "przezobr">
+			<img src = "img/przezobr.png" alt="Not Selected"/>
+			
+		</div>
+		<div class = "LinePrzez" id = "LinePrzez">
+			<img src = "img/LinePrzez.png" alt="Not Selected"/>
+			
+		</div>
+		<div class = "CreateMap" id = "CreateMap">
+			<img src = "img/CreateMap.png" alt="Not Selected"/>
+			<img src = "img/CreateMapSel.png" class="img-top" alt="Selected"/>
+		</div>
+		<div class = "AddCity" id = "AddCity">
+			<img src = "img/AddCity.png" alt="Not Selected"/>
+			<img src = "img/AddCitySel.png" class="img-top" alt="Selected"/>
+		</div>
+		<div class = "SaveParams" id = "SaveParams">
+			<img src = "img/SaveParams.png" alt="Not Selected"/>
+			<img src = "img/SaveParamsSel.png" class="img-top" alt="Selected"/>
+		</div>
+		<div class = "StartAnimation" id = "StartAnimation">
+			<img src = "img/StartAnimation.png" alt="Not Selected"/>
+			<img src = "img/StartAnimationSel.png" class="img-top" alt="Selected"/>
+		</div>
+		<div class = "SetParams" id = "SetParams">
+			<img src = "img/SetParams.png" alt="Not Selected"/>
+			<img src = "img/SetParamsSel.png" class="img-top" alt="Selected"/>
+			
+		</div>
+		<div class = "Odtworz" id = "Odtworz">
+			<img src = "img/Odtworz.png" alt="Not Selected"/>
+			<img src = "img/OdtworzSel.png" class="img-top" alt="Selected"/>
+		</div>
+		<div class = "Poprzedni" id = "Poprzedni">
+			<img src = "img/Poprzedni.png" alt="Not Selected"/>
+			<img src = "img/PoprzedniSel.png" class="img-top" alt="Selected"/>
+		</div>
+		<div class = "SlupCzasu" id = "SlupCzasu">
+			<img src = "img/SlupCzasu.png" alt="Not Selected"/>
+		</div>
+		<div class = "Nastepny" id = "Nastepny">
+			<img src = "img/Nastepny.png" alt="Not Selected"/>
+			<img src = "img/NastepnySel.png" class="img-top" alt="Selected"/>
+		</div>
+		<div class = "PrzedzialPierwszy" id = "PrzedzialPierwszy">
+			<img src = "img/PierwszyPrzedzial.png" alt="Not Selected"/>
+		</div>
+		<div class = "PrzedzialDrugi" id = "PrzedzialDrugi">
+			<img src = "img/PrzedzialDrugi.png" alt="Not Selected"/>
+		</div>
+		<div class = "PrzedzialTrzeci" id = "PrzedzialTrzeci">
+			<img src = "img/PrzedzialTrzeci.png" alt="Not Selected"/>
+		</div>
+</div>
+			
+<script>
+	var cities = L.layerGroup();
+
+	
+
+
+	var mbAttr = 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+			'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+		mbUrl = 'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw';
+
+	var grayscale   = L.tileLayer(mbUrl, {id: 'mapbox.light', attribution: mbAttr}),
+		streets  = L.tileLayer(mbUrl, {id: 'mapbox.streets',   attribution: mbAttr}),
+		dark = L.tileLayer(mbUrl, {id: 'mapbox.dark',   attribution: mbAttr}),
+		satellite = L.tileLayer(mbUrl, {id: 'mapbox.satellite',   attribution: mbAttr})
+		
+		
+	var zoomDelta = 0.5;
+	var zoomNow = 10;
+	var map = L.map('map', {
+		center: [52, 21],
+		zoom: zoomNow,
+		layers: [grayscale, cities],
+		zoomSnap: 0,
+		zoomDelta: zoomDelta,
+		zoomControl: false
+	});
+	/*
+		var	bounds = new L.LatLngBounds(
+			new L.LatLng(54.833333,14,11666666666666666),
+			new L.LatLng(49,24,15));
+		map.fitBounds(bounds);
+
+		var PolandLayer = new L.ImageOverlay("img/MapTest.png", bounds, {
+			opacity: 0.75,
+			interactive: true,
+		});
+		map.addLayer(PolandLayer);
+	*/
+	
+	var baseLayers = {
+		"Grayscale": grayscale,
+		"Streets": streets,
+		"Dark": dark,
+		"Satellite": satellite,
+		
+	};
+
+	var overlays = {
+		"Cities": cities
+	};
+
+	var info = L.control.layers(baseLayers, overlays).addTo(map);
+	map.dragging.disable();
+	map.touchZoom.disable();
+	map.doubleClickZoom.disable();
+	map.scrollWheelZoom.disable();
+	
+	document.getElementById("moving").addEventListener("click", myFunction);
+	
+	document.getElementById("zoomin").addEventListener("click", zoomin);
+	document.getElementById("house").addEventListener("click", house);
+	document.getElementById("zoomout").addEventListener("click", zoomout);
+	function myFunction() {
+		map.dragging.enable();
+		
+	}
+	function zoomin() {	
+		map.dragging.disable();
+		map.setZoom(map.getZoom() + 1)
+	}
+	
+	function house() {	
+		map.dragging.disable();
+		map.setView(new L.LatLng(52, 21), 10);
+	}
+	
+	function zoomout() {	
+		map.dragging.disable();
+		map.setZoom(map.getZoom() - 1)
+	}
+	
+	
+	
+
+</script>
+
+
+
+</body>
+</html>

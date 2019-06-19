@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="40mm"
+   viewBox="0 0 210 40"
+   version="1.1"
+   id="svg33483"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="StartAnimationSel.svg"
+   inkscape:export-filename="C:\Users\Michu\Documents\Serwis - Praca Inż\img\StartAnimationSel.png"
+   inkscape:export-xdpi="91"
+   inkscape:export-ydpi="91">
+  <defs
+     id="defs33477">
+    <filter
+       inkscape:label="Inset"
+       inkscape:menu="Shadows and Glows"
+       inkscape:menu-tooltip="Shadowy outer bevel"
+       style="color-interpolation-filters:sRGB"
+       id="filter1603-0-1-1-5">
+      <feMorphology
+         result="result1"
+         in="SourceAlpha"
+         operator="dilate"
+         radius="3.6"
+         id="feMorphology1591-3-4-7-7" />
+      <feGaussianBlur
+         stdDeviation="3.6"
+         in="result1"
+         result="result0"
+         id="feGaussianBlur1593-7-7-0-1" />
+      <feDiffuseLighting
+         surfaceScale="-5"
+         id="feDiffuseLighting1597-6-8-7-1">
+        <feDistantLight
+           elevation="45"
+           azimuth="225"
+           id="feDistantLight1595-2-0-3-2" />
+      </feDiffuseLighting>
+      <feComposite
+         in2="result0"
+         operator="in"
+         result="result91"
+         id="feComposite1599-7-1-6-6" />
+      <feComposite
+         in="SourceGraphic"
+         in2="result91"
+         id="feComposite1601-5-6-0-8" />
+    </filter>
+    <filter
+       inkscape:label="Inset"
+       inkscape:menu="Shadows and Glows"
+       inkscape:menu-tooltip="Shadowy outer bevel"
+       style="color-interpolation-filters:sRGB"
+       id="filter1589-0-1-6-6">
+      <feMorphology
+         result="result1"
+         in="SourceAlpha"
+         operator="dilate"
+         radius="3.6"
+         id="feMorphology1577-3-8-5-5" />
+      <feGaussianBlur
+         stdDeviation="3.6"
+         in="result1"
+         result="result0"
+         id="feGaussianBlur1579-7-1-4-5" />
+      <feDiffuseLighting
+         surfaceScale="-5"
+         id="feDiffuseLighting1583-4-5-7-6">
+        <feDistantLight
+           elevation="45"
+           azimuth="225"
+           id="feDistantLight1581-2-0-2-7" />
+      </feDiffuseLighting>
+      <feComposite
+         in2="result0"
+         operator="in"
+         result="result91"
+         id="feComposite1585-5-4-7-6" />
+      <feComposite
+         in="SourceGraphic"
+         in2="result91"
+         id="feComposite1587-6-0-2-8" />
+    </filter>
+    <filter
+       inkscape:label="Inset"
+       inkscape:menu="Shadows and Glows"
+       inkscape:menu-tooltip="Shadowy outer bevel"
+       style="color-interpolation-filters:sRGB"
+       id="filter1630-2-4-1-6">
+      <feMorphology
+         result="result1"
+         in="SourceAlpha"
+         operator="dilate"
+         radius="3.6"
+         id="feMorphology1618-1-5-1-8" />
+      <feGaussianBlur
+         stdDeviation="3.6"
+         in="result1"
+         result="result0"
+         id="feGaussianBlur1620-8-3-1-9" />
+      <feDiffuseLighting
+         surfaceScale="-5"
+         id="feDiffuseLighting1624-6-9-1-6">
+        <feDistantLight
+           elevation="45"
+           azimuth="225"
+           id="feDistantLight1622-2-6-8-8" />
+      </feDiffuseLighting>
+      <feComposite
+         in2="result0"
+         operator="in"
+         result="result91"
+         id="feComposite1626-3-6-5-0" />
+      <feComposite
+         in="SourceGraphic"
+         in2="result91"
+         id="feComposite1628-2-9-6-8" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.4200954"
+     inkscape:cx="145.49231"
+     inkscape:cy="-9.0289491"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:pagecheckerboard="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1018"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata33480">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-257)">
+    <path
+       style="display:inline;opacity:0.99500002;fill:#b0b3b3;fill-opacity:0.78039216;stroke:#000000;stroke-width:2.59688687;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 9.5004014,283.48565 c -1.6459614,-0.1336 -2.8705604,-0.54136 -3.9718496,-1.3225 -0.6110041,-0.43339 -1.6207966,-1.35596 -1.8462559,-1.68676 -1.1101733,-1.62898 -1.6150756,-2.89847 -1.9881316,-4.99887 -0.2591928,-1.45934 -0.2595904,-1.59336 -0.00849,-2.92427 0.3470277,-1.83948 0.6916148,-2.88881 1.3116184,-3.99418 0.2806635,-0.50037 0.5459005,-0.939 0.5894269,-0.97475 0.043541,-0.0357 0.2679312,-0.28217 0.4986674,-0.54764 0.7083927,-0.81498 1.2115363,-1.22463 2.0800137,-1.6935 1.1876825,-0.64118 1.7637598,-0.76693 3.3850427,-0.73889 0.7869086,0.0137 1.5036316,-0.0139 1.5927136,-0.0611 0.08908,-0.0472 0.414341,-0.52967 0.722798,-1.07214 0.598778,-1.05304 2.268054,-2.89004 3.111016,-3.42361 1.851078,-1.17167 2.423296,-1.39378 4.170443,-1.6188 1.405547,-0.18103 1.539733,-0.17708 2.699772,0.0793 1.243889,0.27495 2.247339,0.64524 2.624267,0.9684 0.115406,0.0989 0.262384,0.17988 0.326615,0.17988 0.236336,0 2.137153,1.7061 2.711482,2.43372 0.813066,1.03007 1.590433,2.30042 1.930589,3.1549 0.386108,0.96987 0.480201,1.05801 1.03886,0.97293 0.577225,-0.0879 2.349162,0.33583 2.957569,0.70726 0.242648,0.14813 0.503604,0.26932 0.579915,0.26932 0.167036,0 0.604702,0.41812 1.681948,1.60683 0.861194,0.95029 1.604589,2.40164 1.848354,3.60852 0.522858,2.58875 0.518188,2.51137 0.235778,3.9103 -0.561936,2.78353 -1.261868,4.07554 -3.050209,5.63034 -0.906236,0.7879 -2.088658,1.31687 -3.334648,1.49181 -0.81426,0.11431 -20.542002,0.15346 -21.8972866,0.0435 z"
+       id="path3450-4-4-8-5"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\Michu\Documents\Serwis - Praca Inż\img\StartAnimationSel.png"
+       inkscape:export-xdpi="91"
+       inkscape:export-ydpi="91" />
+    <path
+       style="display:inline;fill:#740000;fill-opacity:1;stroke-width:0.11089545"
+       d="m 20.828556,280.64876 c -0.14322,-0.16294 -0.206944,-0.46677 -0.25089,-1.19626 -0.03238,-0.53781 -0.104416,-1.0296 -0.160033,-1.09289 -0.0597,-0.0679 -0.9754,-0.10996 -2.23516,-0.1026 l -2.134034,0.0124 -0.209775,-0.30342 c -0.412844,-0.59713 -0.852018,-2.16843 -0.9564,-3.42183 -0.127333,-1.52898 -0.150515,-3.8915 -0.04971,-5.06559 0.06338,-0.73813 0.119481,-0.94481 0.28362,-1.04475 0.23593,-0.14367 2.238394,-0.31916 3.811389,-0.33402 1.608046,-0.0151 1.573145,0.007 1.573145,-0.95062 0,-0.74369 0.15074,-1.98856 0.255176,-2.10738 0.151385,-0.17224 4.341751,4.33781 5.415375,5.82852 l 0.35035,0.48644 0.0091,1.94587 c 0.005,1.07024 0.0071,2.01107 0.0046,2.09071 -0.0022,0.0796 -0.152038,0.23156 -0.332228,0.33758 -0.180197,0.10602 -0.449205,0.33854 -0.597803,0.51673 -0.148597,0.17818 -0.760425,0.82471 -1.359621,1.43673 -0.599191,0.61201 -1.499594,1.5785 -2.000893,2.14777 -0.501299,0.56926 -0.981831,1.03501 -1.06785,1.03501 -0.08602,0 -0.242783,-0.0983 -0.348374,-0.21842 z"
+       id="path63094"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\Michu\Documents\Serwis - Praca Inż\img\StartAnimationSel.png"
+       inkscape:export-xdpi="91"
+       inkscape:export-ydpi="91" />
+  </g>
+</svg>

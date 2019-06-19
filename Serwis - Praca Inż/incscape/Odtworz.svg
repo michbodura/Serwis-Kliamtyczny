@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="40mm"
+   viewBox="0 0 210 40"
+   version="1.1"
+   id="svg8159"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="Odtworz.svg">
+  <defs
+     id="defs8153">
+    <filter
+       inkscape:label="Sharpen"
+       inkscape:menu="Image Effects"
+       inkscape:menu-tooltip="Sharpen edges and boundaries within the object, force=0.15"
+       style="color-interpolation-filters:sRGB"
+       id="filter1310-5-4-4-9">
+      <feConvolveMatrix
+         order="3 3"
+         kernelMatrix="0 -0.15 0 -0.15 1.6 -0.15 0 -0.15 0"
+         divisor="1"
+         in="SourceGraphic"
+         targetX="1"
+         targetY="1"
+         id="feConvolveMatrix1308-8-0-5-5" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="6.720829"
+     inkscape:cx="131.84062"
+     inkscape:cy="105.51542"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:pagecheckerboard="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1018"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata8156">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-257)">
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot196-5-6-7-7"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:34.47959137px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';letter-spacing:0px;word-spacing:0px;display:inline;opacity:0.99500002;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1.52714717;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter1310-5-4-4-9)"
+       transform="matrix(0.2098887,0,0,0.22058934,-913.99325,-480.26552)"
+       inkscape:export-filename="C:\Users\Michu\Documents\Serwis - Praca Inż\img\Odtworz.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><flowRegion
+         id="flowRegion198-8-6-9-7"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.54974365px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';stroke:#000000;stroke-width:1.52714717;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"><rect
+           id="rect200-1-7-2-5"
+           width="474.28571"
+           height="125.71429"
+           x="4354.2856"
+           y="3339.0327"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.54974365px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';stroke:#000000;stroke-width:1.52714717;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" /></flowRegion><flowPara
+         id="flowPara202-2-6-9-2"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Tw Cen MT';-inkscape-font-specification:'Tw Cen MT Bold';stroke:#000000;stroke-width:1.52714717;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">Odtwórz:</flowPara><flowPara
+         id="flowPara204-5-8-0-1"
+         style="stroke:#000000;stroke-width:1.52714717;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" /></flowRoot>    <path
+       style="display:inline;opacity:0.99500002;fill:#b0b3b3;fill-opacity:0.78039216;stroke:#000000;stroke-width:1.73010361;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 6.3052366,283.46456 c -1.0102854,-0.0966 -1.7619351,-0.3915 -2.4379042,-0.95635 -0.3750309,-0.31339 -0.9948349,-0.98051 -1.1332217,-1.21976 -0.6814196,-1.17794 -0.9913255,-2.09596 -1.2203065,-3.61478 -0.1590925,-1.0553 -0.1593343,-1.15221 -0.00523,-2.11463 0.2130045,-1.33016 0.4245109,-2.08896 0.8050673,-2.88829 0.1722693,-0.36185 0.3350704,-0.67904 0.3617852,-0.70487 0.026724,-0.026 0.1644551,-0.20404 0.3060797,-0.396 0.434808,-0.58934 0.7436353,-0.88558 1.2767056,-1.22463 0.7289921,-0.46364 1.082585,-0.5546 2.0777229,-0.53432 0.4830001,0.01 0.9229202,-0.01 0.9775971,-0.0441 0.054682,-0.0342 0.2543231,-0.383 0.4436533,-0.77529 0.3675268,-0.7615 1.392122,-2.08986 1.9095246,-2.47568 1.1361831,-0.84728 1.4874091,-1.0079 2.5597991,-1.17061 0.862716,-0.13093 0.94508,-0.12808 1.657109,0.0575 0.763494,0.19881 1.379406,0.4666 1.610764,0.70026 0.07082,0.0716 0.161051,0.13008 0.200475,0.13008 0.145061,0 1.311769,1.23373 1.664293,1.75991 0.499054,0.74484 0.9762,1.66347 1.184986,2.28139 0.236989,0.70133 0.294741,0.76507 0.637647,0.70355 0.354298,-0.0635 1.441904,0.24283 1.815341,0.51142 0.148936,0.10714 0.30911,0.19477 0.355952,0.19477 0.102524,0 0.37116,0.30237 1.032371,1.16195 0.528595,0.68719 0.984885,1.73668 1.134511,2.60941 0.320925,1.87198 0.31806,1.81603 0.144719,2.82764 -0.344917,2.01282 -0.774529,2.94714 -1.872208,4.07143 -0.556241,0.56977 -1.282006,0.95227 -2.046792,1.07878 -0.499787,0.0827 -12.6085807,0.11096 -13.4404487,0.0314 z"
+       id="path3450-4-4-8-5-9-7"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\Michu\Documents\Serwis - Praca Inż\img\Odtworz.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.41906023px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:Calibri;letter-spacing:0px;word-spacing:0px;display:inline;opacity:0.99500002;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0869421"
+       x="-292.39648"
+       y="15.767776"
+       id="text1901-6-8"
+       transform="matrix(0,-0.95412241,1.0480835,0,0,0)"
+       inkscape:export-filename="C:\Users\Michu\Documents\Serwis - Praca Inż\img\Odtworz.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan1899-6-9"
+         x="-292.39648"
+         y="15.767776"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Calibri;-inkscape-font-specification:Calibri;stroke-width:0.0869421">▼</tspan></text>
+  </g>
+</svg>
